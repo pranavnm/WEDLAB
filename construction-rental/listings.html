@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals | BuildRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html" class="active">Rentals</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SECTION: LISTINGS PAGE -->
+        <section id="listings-page">
+            <h1>Available Equipment</h1>
+
+            <!-- Search & Filter Controls -->
+            <div class="filters">
+                <input type="text" id="search-input" placeholder="Search equipment...">
+
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Excavator">Excavator</option>
+                    <option value="Loader">Loader</option>
+                    <option value="Crane">Crane</option>
+                    <option value="Mixer">Mixer</option>
+                </select>
+
+                <select id="sort-filter">
+                    <option value="default">Sort by</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+
+            <!-- Grid where items are injected via JS -->
+            <div id="listings-grid" class="equipment-grid">
+                <!-- Javascript will populate this -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

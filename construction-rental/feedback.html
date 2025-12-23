@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | BuildRent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Rentals</a>
+                    <a href="feedback.html" class="active">Feedback</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SECTION: FEEDBACK -->
+        <section id="feedback-page">
+            <div class="feedback-container">
+                <h1>Customer Feedback</h1>
+                <p>Tell us about your experience renting with us.</p>
+
+                <!-- Feedback Form -->
+                <form id="feedback-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="fb-name">Name *</label>
+                        <input type="text" id="fb-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating *</label>
+                        <div id="star-rating-container" class="star-rating-input">
+                            <span data-value="1" class="filled">★</span>
+                            <span data-value="2" class="filled">★</span>
+                            <span data-value="3" class="filled">★</span>
+                            <span data-value="4" class="filled">★</span>
+                            <span data-value="5" class="filled">★</span>
+                        </div>
+                        <input type="hidden" id="fb-rating" value="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fb-comment">Comments</label>
+                        <textarea id="fb-comment" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Feedback</button>
+                    <div id="fb-message"></div>
+                </form>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ddd;">
+
+                <h3>Recent Reviews</h3>
+                <div id="reviews-list">
+                    <!-- Reviews loaded from LocalStorage -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
